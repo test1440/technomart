@@ -3,7 +3,7 @@
 
   <head>
     <meta charset="utf-8">
-    <title>ТЕХНОМАРТ hgh</title>
+    <title>ТЕХНОМАРТ</title>
   </head>
 
   <body>
@@ -36,7 +36,7 @@
     </header>
     <main>
       <section class="main-tools">
-        <!-- слайдер и проч -->
+
         <ul>
           <li>
             <p>Материалы</p>
@@ -51,14 +51,22 @@
             <a class="button" href="technic.html">Для стройки</a>
           </li>
         </ul>
-        <div class="slider">
-          <img src="#" width="109" height="19" alt="Slider-background">
-          <h2>Дрели</h2>
-          <p>Соседям на радость!</p>
+
+        <!-- слайдер -->
+        <div class="slider-main-tools">
+          <ul>
+            <li>
+              <img src="#" width="109" height="19" alt="Slider-background-1">
+              <h2>Дрели</h2>
+              <p>Соседям на радость</p>
+            </li>
+            <li>
+              <img src="#" width="109" height="19" alt="Slider-background-2">
+              <h2>Перфораторы</h2>
+              <p>Настоящие мужские игрушки</p>
+            </li>            
+          </ul>
           <a class="button" href="catalog.html">Открыть каталог</a>
-
-          <!-- список и второй слайд -->
-
         </div>
         <ul>
           <li>
@@ -81,9 +89,11 @@
             <p>Перфоратор BOSCH BFG 9000</p>
             <p><del>32500 Р.</del></p>
             <a class="button" href="25500.html">25500 Р.</a>
+            <!-- псевдоклассом?
             <div>
               <a class="button" href="#">Купить</a>
-              <a class="button" href="#">Закладки</a>
+              <a class="button" href="#">В закладки</a>
+              -->
             </div>
           </li>
           <li>
@@ -154,16 +164,24 @@
       </section>
       <section class="services">
 
-        <!--- Сервисы допилить-->
+        <!--- Сервисы допилить: тут список и слайдер,форма -->
 
         <h2>Сервисы</h2>
         <p>Хороший интернет-магазин отличается от плохого Не только ценами!</p>
         <p>Мы стараемся изо всех сил чтобы сделать ваши покупки приятными.</p>
         <form action="#" method="post">
           <select name="service" multiple size="3">
-            <option selected>Доставка</option>
-            <option>Гарантия</option>
-            <option>Кредит</option>
+            <ul>
+              <li>
+                <option selected>Доставка</option>
+              </li>
+              <li>
+                <option>Гарантия</option>
+              </li>
+              <li>
+                <option>Кредит</option>
+              </li>
+            </ul>
           </select>
         </form>
         <div>
@@ -171,7 +189,12 @@
           <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно!</p>
           <p>Ведь мы неплохо заработаем, поднимая его на ваш этаж!</p>
         </div>
-
+        <div>
+          <h3>Гарантия</h3>
+        </div>
+        <div>
+          <h3>Кредит</h3>
+        </div>
         <!--- Сервисы допилить-->
 
       </section>
