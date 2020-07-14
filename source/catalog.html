@@ -30,7 +30,7 @@
                 </li>
                 <li>
                     <a href="#">
-                        <!-- кнопка выхода их акка -->
+                        <!-- кнопка выхода из акка -->
                         Exit
                     </a>
                 </li>
@@ -76,7 +76,54 @@
                 <h1>Перфораторы</h1>
             </div>
             <section class="filter">
-                <!-- ваще не помню((( -->
+                <h2>Фильтр:</h2>
+                <form class="filter-parameters" action="http://echo.htmlacademy.ru" method="GET">
+                    <fieldset class="price-field">
+                        <legend>Цена:</legend>
+                        <input class="price-min" type="text" name="price-min" value="0" />
+                        <span>—</span>
+                        <input class="price-max" type="text" name="price-max" value="30000" />
+                    </fieldset>
+                    <fieldset class="manufacturer-field">
+                        <legend>Производители:</legend>
+                        <ul class="manufacturer-list">
+                            <li>
+                                <input type="checkbox" name="Bosch" id="bosch" checked />
+                                <label for="filter-bosch">Bosch</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="Interskol" id="interskol" />
+                                <label for="filter-interskol">Интерскол</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="makita" id="makita" checked />
+                                <label for="filter-makita">Makita</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="dewalt" id="dewalt" />
+                                <label for="filter-dewalt">Dewalt</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="hitachi" id="hitachi" />
+                                <label for="filter-hitachi">Hitachi</label>
+                            </li>
+                        </ul>
+                    </fieldset>
+                    <fieldset class="power-field">
+                        <legend>Питание:</legend>
+                        <ul class="power-list">
+                            <li>
+                                <input type="radio" name="power" value="battery" id="filter-power" checked />
+                                <label for="filter-power">Аккумуляторные</label>
+                            </li>
+                            <li>
+                                <input type="radio" name="power" value="network" id="filter-network" />
+                                <label for="filter-network">Сетевые</label>
+                            </li>
+                        </ul>
+                    </fieldset>
+                    <button class="filter-button" type="submit">Показать</button>
+                </form>
             </section>
             <div class="sorting">
                 <h2>Сортировка:</h2>
@@ -177,9 +224,7 @@
                     <a href="#">Следующая</a>
                 </li>
             </ul>
-
             <section class="about-perforator">
-
                 <h2>Пара слов о перфораторах</h2>
                 <p>
                     Перфоратор — универсальный строительный инструмент. Предназначен для
@@ -192,9 +237,7 @@
                     «трехрежимников»: в одном устройстве будут совмещены отбойный
                     молоток и ударная дрель.
                 </p>
-
             </section>
-
         </main>
 
         <footer class="main-footer">
@@ -239,8 +282,7 @@
                     <b>Обратная связь:</b>
                     <a class="button" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
                 </p>
-                <p>
-                    <!-- было: <p class="footer-copyright"> -->
+                <p>                    
                     <b>Разработано - </b>
                     <a class="button" href="#">htmlacademy.ru</a>
                 </p>
