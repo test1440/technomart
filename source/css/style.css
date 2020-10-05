@@ -1,17 +1,60 @@
-html {
-    box-sizing: border-box;
-}
-*, *:before, *:after {
-    box-sizing: inherit;    
+body {
+  margin: 0;
+  padding: 0;
+
+  font-family: "Cuprum", Arial, sans-serif;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 24px;
+  color: #000000;
+
+  background-color: #ffffff;
 }
 
-body {
-    margin: 0;
-    font-family: Roboto, Arial, sans-serif;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 21px;
-    color: #000000;
-    background-color: #ffffff;
+a {
+  text-decoration: none;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+/* header */
+
+.main-header {
+  align-items: center;
+  margin-bottom: 59px;
+
+  background-color: #f4f7f9;
+}
+
+/* end header */
+
+button {
+  font: inherit;
+  text-align: center;
+  vertical-align: middle;
+  color: #ffffff;
+  text-transform: uppercase;
+  border: none;
+}
+
+.button {
+  padding: 10px 40px;
+
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  color: inherit;
+  text-transform: uppercase;
+
+  background-color: #ffffff;
+  border-radius: 4px;
 }
