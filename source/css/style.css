@@ -15,6 +15,10 @@ a {
   text-decoration: none;
 }
 
+ul {
+  list-style: none; /* пока так пусть */
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -29,32 +33,255 @@ a {
 /* header */
 
 .main-header {
-  align-items: center;
-  margin-bottom: 59px;
-
   background-color: #f4f7f9;
+}
+
+.main-logo {
+  width: 220px;
+  height: 42px;
+
+  text-align: center;
+
+  background-color: #ed3543;
+}
+
+.main-logo:hover {
+  background-color: #e38087;
+}
+
+.main-logo:focus,
+.main-logo:active {
+  background-color: #e38087;
+  outline: none;
+}
+
+.form-search,
+.bookmarks,
+.cart,
+.order,
+.site-navigation a {
+  font-size: 17px;
+  line-height: 18px;
+}
+
+.form-search:hover {
+  background-color: #d8e2f2;
+}
+
+.form-search:focus,
+.form-search:active {
+  color: #000000;
+  background-color: #ffffff;
+}
+
+.main-phone {
+  font-size: 21px;
+  line-height: 21px;
+  color: #ed3543;
+
+  border: solid 3px #ffffff;
+}
+
+.main-adress {
+  font-size: 14px;
+  color: #293349;
+}
+
+.user-navigation {
+  font-size: 21px;
+  line-height: 21px;
+}
+
+.user-navigation,
+.site-navigation {
+  list-style: none;
+}
+
+.user-navigation a {
+  color: inherit;
+
+  background-color: #ffffff;
+}
+
+.main-header-top,
+.site-navigation {
+  background-color: #293349;
+}
+
+.form-search:focus,
+.form-search:active {
+  color: #000000;
+
+  background-color: #ffffff;
+}
+
+.search-form button {
+  background: transparent;
+  border: none;
+  outline: none;
+}
+
+.bookmarks:focus,
+.cart:focus,
+.order:focus,
+.bookmarks:active,
+.cart:active,
+.order:active {
+  color: gray;
+
+  background-color: #293349;
+}
+
+.bookmarks:hover,
+.cart:hover,
+.order:hover {
+  background-color: #62a63d;
+}
+
+.bookmarks,
+.cart,
+.order {
+  color: #ffffff;
+}
+
+.description {
+  font-style: italic;
+  font-size: 16px;
+  line-height: 23px;
+  color: #ed3543;
+  text-align: left;
+}
+
+.main-phone {
+  font-size: 21px;
+  line-height: 21px;
+  color: #ed3543;
+}
+
+.main-adress {
+  font-size: 14px;
+  color: #293349;
+}
+
+.user-navigation {
+  font-size: 21px;
+  line-height: 21px;
+}
+
+.user-navigation a {
+  color: inherit;
+  background-color: #ffffff;
+}
+
+.user-navigation a:hover {
+  color: #ed3543;
+  background-color: #60779c;
+}
+
+.user-navigation a:focus,
+.user-navigation a:active {
+  color: #e38087;
+}
+
+.site-navigation a {
+  line-height: 17px;
+  color: #ffffff;
+  outline: none;
+}
+
+.site-navigation a:hover {
+  background-color: #60779c;
+}
+
+.site-navigation a:focus,
+.site-navigation a:active {
+  background-color: #60779c;
 }
 
 /* end header */
 
-button {
-  font: inherit;
-  text-align: center;
-  vertical-align: middle;
+/* section main-tools */
+
+.tools h3,
+.main-services h3 {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 30px;
   color: #ffffff;
-  text-transform: uppercase;
-  border: none;
 }
 
-.button {
-  padding: 10px 40px;
-
+.tools a,
+.main-services a {
   font-size: 14px;
   line-height: 18px;
-  text-align: center;
-  color: inherit;
-  text-transform: uppercase;
+  color: #ffffff;
 
-  background-color: #ffffff;
-  border-radius: 4px;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.tools a:hover {
+  background-color: rgb(0, 0, 0, 0.2);
+}
+
+.tools a:focus,
+.tools a:active {
+  background-color: rgb(0, 0, 0, 0.3);
+}
+
+.tools-materials {
+  background-color: #ffbf47;
+}
+
+.tools-utils {
+  background-color: #3bbbe2;
+}
+
+.tools-technic {
+  background-color: #db90d8;
+}
+
+/* слайдер */
+
+.slider h2 {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 36px;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.slider p {
+  font-size: 18px;
+  line-height: 24px;
+  color: #ffffff;
+}
+
+.slider a {
+  font-size: 14px;
+  line-height: 18px;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.slider-shurupovert {
+  background-image: url("../img/slider/slide-2.jpg");
+  background-repeat: no-repeat;
+  /* opacity: 0; */ /* временно */
+}
+
+.slider-perforator {
+  background-image: url("../img/slider/slide-1.jpg");
+  background-repeat: no-repeat;
+}
+
+/* стрелки, кругляшки? */
+
+/* конец слайдера */
+
+.services-discounts {
+  background-color: #8dd68e;
+}
+
+.services-delivery {
+  background-color: #ffbf47;
 }
