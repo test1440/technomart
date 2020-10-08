@@ -170,7 +170,7 @@ ul {
 
 .user-navigation a {
   color: inherit;
-  background-color: #ffffff;
+  background-color: transparent;
 }
 
 .user-navigation a:hover {
@@ -272,6 +272,7 @@ ul {
 .slider-perforator {
   background-image: url("../img/slider/slide-1.jpg");
   background-repeat: no-repeat;
+  opacity: 1;
 }
 
 /* стрелки, кругляшки? */
@@ -365,6 +366,21 @@ ul {
   text-transform: uppercase;
 }
 
+.delivery {
+  background-image: url("../img/delivery.png");
+  background-repeat: no-repeat;
+}
+
+.guarantee {
+  background-image: url("../img/guarantee.png");
+  background-repeat: no-repeat;
+}
+
+.credit {
+  background-image: url("../img/credit.png");
+  background-repeat: no-repeat;
+}
+
 .about-us-list {
   font-size: 18px;
   line-height: 20px;
@@ -401,12 +417,14 @@ a.link {
 
 /* end footer */
 
-/* кнопалки допилить */
+/* кнопалки */
 .button {
   font-size: 14px;
   line-height: 18px;
   text-align: center;
   text-transform: uppercase;
+  border: none;
+  cursor: pointer;
 }
 
 .button-red {
@@ -438,4 +456,41 @@ a.link {
 .button-bookmarks {
   border: solid 3px #63a63e;
 }
+
 /* конец кнопалок */
+
+/* modal */
+
+.button-close:hover {
+  cursor: pointer;
+}
+
+.modal-feedback,
+.modal-authorization,
+.modal-add-cart {
+  background-color: #ffffff;
+}
+
+.modal-feedback label {
+  font-size: 18px;
+  line-height: 18px;
+}
+
+.modal-feedback input,
+.modal-feedback textarea {
+  font-family: "PT Sans", Arial, sans-serif;
+  color: #a9a9a9;
+  border: solid 2px #dee3e4;
+}
+
+.modal-feedback input,
+.modal-feedback textarea {
+  font-size: 13px;
+  line-height: 18px;
+}
+
+/* end modal */
+
+/* flag-new */
+
+/* end flag-new */

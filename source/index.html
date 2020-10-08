@@ -84,13 +84,13 @@
           </li>
         </ul>
       </section>
-      <div class="slider-main-tools">
+      <section class="slider-main-tools">
         <ul class="slider">
           <li class="slider-shurupovert">
             <!-- <img src="img/slider/slide-1.jpg" width="109" height="60" alt="Man-with-shurupovert"> -->
             <h2>Дрели</h2>
             <p>Соседям на радость!</p>
-            <a class="button catalog" href="catalog.html">Открыть каталог</a>
+            <a class="button button-red" href="catalog.html">Открыть каталог</a>
           </li>
           <li class="slider-perforator">
             <!-- <img src="img/slider/slide-2.jpg" width="109" height="60" alt="Man-with-perforator"> -->
@@ -117,7 +117,7 @@
             <button class="switch-arrow-2" type="button" aria-label="Листать слайды вправо">Слайд-2</button>
           </li>
         </ul>
-      </div>
+      </section>
       <section class="main-services">
         <h2 class="visually-hidden">Сервисы</h2>
         <ul>
@@ -261,32 +261,34 @@
             <button class="services-toggle button-credit" type="button">Кредит</button>
           </li>
         </ul>
-        <div class="delivery">
-          <h3>Доставка</h3>
-          <p>
-            Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно!
-          </p>
-          <p>
-            Ведь мы неплохо заработаем, поднимая его на ваш этаж!
-          </p>
-        </div>
-        <div class="guarantee">
-          <h3>Гарантия</h3>
-          <p>
-            Если купленный у нас товар поломается или заискрит, а также в случае пожара, спровоцированного его
-            возгоранием, вы всегда можете быть уверены в нашей гарантии. Мы обменяем
-            сгоревший товар на новый.
-          </p>
-          <p>
-            Дом уж восстановите как-нибудь сами.
-          </p>
-        </div>
-        <div class="credit">
-          <h3>Кредит</h3>
-          <p>Залезть в долговую яму стало проще!</p>
-          <p>Кредитные консультанты придут вам на помощь.</p>
-          <a class="button button-red" href="#">отправить заявку</a>
-        </div>
+        <ul>
+          <li class="delivery">
+            <h3>Доставка</h3>
+            <p>
+              Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно!
+            </p>
+            <p>
+              Ведь мы неплохо заработаем, поднимая его на ваш этаж!
+            </p>
+          </li>
+          <li class="guarantee">
+            <h3>Гарантия</h3>
+            <p>
+              Если купленный у нас товар поломается или заискрит, а также в случае пожара, спровоцированного его
+              возгоранием, вы всегда можете быть уверены в нашей гарантии. Мы обменяем
+              сгоревший товар на новый.
+            </p>
+            <p>
+              Дом уж восстановите как-нибудь сами.
+            </p>
+          </li>
+          <li class="credit">
+            <h3>Кредит</h3>
+            <p>Залезть в долговую яму стало проще!</p>
+            <p>Кредитные консультанты придут вам на помощь.</p>
+            <a class="button button-red" href="#">отправить заявку</a>
+          </li>
+        </ul>
       </section>
       <section class="about-us">
         <h2>Компания «Техномарт»</h2>
@@ -363,11 +365,11 @@
               alt="Vkontakte"><span class="visually-hidden">Vkontakte</span></a>
         </li>
         <li>
-          <a class="social-button" href="#"><img src="img/icon-fb.svg" width="24" height="24"
-              alt="Facebook"><span class="visually-hidden">Facebook</span></a></li>
+          <a class="social-button" href="#"><img src="img/icon-fb.svg" width="24" height="24" alt="Facebook"><span
+              class="visually-hidden">Facebook</span></a></li>
         <li>
-          <a class="social-button" href="#"><img src="img/icon-insta.svg" width="24" height="24"
-              alt="Instagram"><span class="visually-hidden">Instagram</span></a>
+          <a class="social-button" href="#"><img src="img/icon-insta.svg" width="24" height="24" alt="Instagram"><span
+              class="visually-hidden">Instagram</span></a>
         </li>
       </ul>
       <div class="footer-feedback">
@@ -389,27 +391,43 @@
         <input type="text" id="username-field" name="username" placeholder="Имя Фамилия" />
         <button class="button button-red" type="submit">Отправить</button>
       </form>
-      <button class="button-close" type="button" aria-label="Закрыть"></button>
+      <button class="button-close" type="button" aria-label="Закрыть">x</button>
     </section>
 
-    <div class="modal modal-map">
+    <section class="modal modal-map">
       <h2 class="visually-hidden">Карта</h2>
-      <!-- карта -->
-    </div>
+      <p>
+        <img src="img/map.jpg" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург" width="940"
+          height="446" />
+      </p>
+      <button class="button-close" type="button" aria-label="Закрыть">x</button>
+    </section>
 
-    <div class="modal modal-feedback">
-      <h2 class="visually-hidden">Форма</h2>
-      <!-- форма - напишите нам -->
-    </div>
+    <section class="modal modal-feedback">
+      <h2 class="visually-hidden">Напишите нам!</h2>
+      <form action="#" method="post">
+        <label for="field-name">Ваше имя:</label>
+        <input type="text" id="field-name" name="your_name" placeholder="Имя Фамилия" />
+        <label for="field-email">Ваш e-mail:</label>
+        <input type="text" id="field-email" name="your_email" placeholder="email@zxc.com" />
+        <label for="field-comment">Текст письма:</label>
+        <textarea name="field-comment" id="field-comment" rows="8">В свободной форме</textarea>
+      </form>
+      <button class="button button-red" type="submit">Отправить</button>
+      <button class="button-close" type="button" aria-label="Закрыть">x</button>
+    </section>
 
-    <div class="modal modal-add-cart">
-      <h2 class="visually-hidden">Корзина</h2>
-      <!-- Товар добавлен в корзину! -->
-    </div>
+    <section class="modal modal-add-cart">
+      <h2>Товар добавлен в корзину!</h2>
+      <a class="button button-red" href="#">Оформить заказ</a>
+      <a class="button" href="catalog.html">Продолжить покупки</a>
+      <button class="button-close" type="button" aria-label="Закрыть">x</button>
+    </section>
 
-    <div>
+    <div class="flag-new">
       <!-- ленточка-флаг -->
     </div>
+
   </body>
 
 </html>
