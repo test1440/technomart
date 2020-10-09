@@ -33,7 +33,7 @@ ul {
 /* header */
 
 .main-header {
-  background-color: #f4f7f9;
+  background-color: #f3f7f8;
 }
 
 .main-logo {
@@ -82,6 +82,10 @@ ul {
   border: solid 3px #ffffff;
 }
 
+.main-phone:hover {
+  text-decoration: underline;
+}
+
 .main-adress {
   font-size: 14px;
   color: #293349;
@@ -121,6 +125,22 @@ ul {
   outline: none;
 }
 
+.bookmarks,
+.cart,
+.order {
+  color: #ffffff;
+  background-color: transparent;
+}
+
+.bookmarks:hover,
+.order:hover {
+  background-color: #62a63d;
+}
+
+.cart:hover {
+  background-color: #ed3543;
+}
+
 .bookmarks:focus,
 .cart:focus,
 .order:focus,
@@ -128,20 +148,7 @@ ul {
 .cart:active,
 .order:active {
   color: gray;
-
   background-color: #293349;
-}
-
-.bookmarks:hover,
-.cart:hover,
-.order:hover {
-  background-color: #62a63d;
-}
-
-.bookmarks,
-.cart,
-.order {
-  color: #ffffff;
 }
 
 .description {
@@ -150,17 +157,6 @@ ul {
   line-height: 23px;
   color: #ed3543;
   text-align: left;
-}
-
-.main-phone {
-  font-size: 21px;
-  line-height: 21px;
-  color: #ed3543;
-}
-
-.main-adress {
-  font-size: 14px;
-  color: #293349;
 }
 
 .user-navigation {
@@ -195,7 +191,30 @@ ul {
 
 .site-navigation a:focus,
 .site-navigation a:active {
-  background-color: #60779c;
+  color: #ed3543;
+}
+
+.user-subnavigation {
+  list-style: none;
+}
+
+.user-subnavigation a {
+  font-size: 16px;
+  line-height: 18px;
+  color: #49586f;
+  text-decoration: underline;
+}
+
+.user-subnavigation a:hover,
+.breadcrumbs a:hover {
+  color: #ed3543;
+}
+
+.user-subnavigation a:focus,
+.user-subnavigation a:active,
+.breadcrumbs a:focus,
+.breadcrumbs a:active {
+  color: rgba(0, 0, 0, 0.3);
 }
 
 /* end header */
@@ -289,9 +308,10 @@ ul {
 
 /* end main-tools, main-services */
 
-/* section pop-product */
+/* section pop-product, catalog h3 & del */
 
-.pop-product li {
+.pop-product li,
+.catalog li {
   font-family: "PT Sans", Arial, sans-serif;
 }
 
@@ -305,14 +325,16 @@ ul {
   background-color: #f9f5f0;
 }
 
-.pop-product-list h3 {
+.pop-product-list h3,
+.catalog-list h3 {
   font-weight: bold;
   font-size: 18px;
   line-height: 20px;
   color: #32425c;
 }
 
-.pop-product-list del {
+.pop-product-list del,
+.catalog-list del {
   color: #a9a9a9;
 }
 
@@ -325,15 +347,17 @@ ul {
 }
 /* end pop-product */
 
-/* services, about-us */
+/* services, about-us, about-perforator */
 
-.services {
+.services,
+.about-perforator {
   background-color: #f4f8f9;
 }
 
 .services h2,
 .about-us h2,
-.map h2 {
+.map h2,
+.about-perforator h2 {
   font-size: 30px;
   line-height: 30px;
   font-weight: normal;
@@ -342,7 +366,8 @@ ul {
 
 .services p,
 .about-us p,
-.map p {
+.map p,
+.about-perforator p {
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 13px;
   line-height: 24px;
@@ -389,6 +414,129 @@ ul {
 
 /* end services, about-us */
 
+/* filter, catalog */
+
+.page-catalog .main-header {
+  background-color: #f2f6f8;
+}
+
+.breadcrumbs li,
+.breadcrumbs a {
+  color: inherit;
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.title h1 {
+  font-weight: normal;
+  font-size: 30px;
+  line-height: 30px;
+  color: #32425c;
+  text-transform: uppercase;
+  background-color: #f1f5f7;
+}
+
+.filter,
+.filter h2,
+.sorting,
+.sorting h2 {
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 13px;
+  color: inherit;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.filter h2,
+.sorting {
+  background-color: #f7f2ec;
+}
+
+.price-min,
+.price-max {
+  background-color: #f7f2ec;
+  border: none;
+}
+
+.filter-parameters fieldset {
+  border: none;
+}
+
+.filter-parameters legend {
+  font-family: "PT Sans", Arial, sans-serif;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.manufacturer-list {
+  list-style: none;
+  font-size: 15px;
+  line-height: 20px;
+  font-family: "PT Sans", Arial, sans-serif;
+  text-transform: uppercase;
+}
+
+.filter-button {
+  font-size: 13px;
+  line-height: 18px;
+  font-family: "PT Sans", Arial, sans-serif;
+  color: inherit;
+  background-color: #ffffff;
+  border: solid 1px #e5e5e5;
+}
+
+.filter-parameters .filter-button:hover,
+.filter-parameters .filter-button:focus,
+.filter-parameters .filter-button:active {
+  cursor: pointer;
+  background-color: #63a53d;
+}
+
+.sorting-list a {
+  color: #aca9a5;
+  border-bottom: 1px dotted #ed3543;
+}
+
+.sorting-list a:hover {
+  color: inherit;
+  border-width: 1px;
+  border-bottom-style: solid;
+}
+
+.sorting-list a:focus,
+.sorting-list a:active {
+  color: #ee3643;
+  border-width: 0;
+}
+
+.pages-list a {
+  line-height: 18px;
+  font-family: "PT Sans", Arial, sans-serif;
+  text-align: center;
+  color: inherit;
+  text-transform: uppercase;
+  border: 1px solid #e5e5e5;
+}
+
+.pages-list a:hover,
+.pages-list a:focus,
+.pages-list a:active {
+  border-color: #fc5a8d;
+  outline: none;
+}
+
+.page-active a {
+  color: #ffffff;
+  background-color: #ee3643;
+  border-width: 0;
+}
+
+/* end filter, catalog */
+
 /* footer */
 
 .main-footer,
@@ -409,19 +557,36 @@ a.link {
   color: #ffd180;
 }
 
+.link:hover,
+.footer-phone:hover {
+  text-decoration: underline;
+}
+
 .footer-copyright,
 .footer-feedback {
   font-size: 16px;
   line-height: 18px;
 }
 
+.footer-navigation a:hover,
+.footer-tools a:hover,
+.footer-navigation a:focus,
+.footer-navigation a:active,
+.footer-tools a:focus,
+.footer-tools a:active {
+  background-color: #60779c;
+}
+
 /* end footer */
 
 /* кнопалки */
+
 .button {
+  font: inherit;
   font-size: 14px;
   line-height: 18px;
   text-align: center;
+  vertical-align: middle;
   text-transform: uppercase;
   border: none;
   cursor: pointer;
@@ -479,14 +644,24 @@ a.link {
 .modal-feedback input,
 .modal-feedback textarea {
   font-family: "PT Sans", Arial, sans-serif;
-  color: #a9a9a9;
-  border: solid 2px #dee3e4;
+  color: #b7b7b7;
+  border: solid 2px #b7b7b7;
 }
 
 .modal-feedback input,
 .modal-feedback textarea {
   font-size: 13px;
   line-height: 18px;
+}
+
+.modal-feedback input[type="text"]:hover,
+.modal-feedback textarea:hover,
+.modal-feedback input[type="text"]:focus,
+.modal-feedback input[type="text"]:active,
+.modal-feedback textarea:focus,
+.modal-feedback textarea:active {
+  border-color: #f7080d;
+  outline: none;
 }
 
 /* end modal */
