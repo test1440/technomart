@@ -92,13 +92,11 @@
         <section class="slider-main-tools">
           <ul class="slider">
             <li class="slider-shurupovert">
-              <!-- <img src="img/slider/slide-1.jpg" width="109" height="60" alt="Man-with-shurupovert"> -->
               <h2>Дрели</h2>
               <p>Соседям на радость!</p>
               <a class="button button-red" href="catalog.html">Открыть каталог</a>
             </li>
             <li class="slider-perforator">
-              <!-- <img src="img/slider/slide-2.jpg" width="109" height="60" alt="Man-with-perforator"> -->
               <h2>Перфораторы</h2>
               <p>Настоящие мужские игрушки</p>
               <a class="button button-red" href="catalog.html">Открыть каталог</a>
@@ -122,18 +120,18 @@
               <button class="switch-arrow-2" type="button" aria-label="Листать слайды вправо">Слайд-2</button>
             </li>
           </ul>
-          <ul>
         </section>
         <section class="services-discounts-tools">
           <div class="services-discounts-container">
-            <li class="services-discounts">
-              <h3>Скидки 50%</h3>
-              <a class="button" href="catalog.html">На 350 товаров</a>
-            </li>
-            <li class="services-delivery">
-              <h3>Доставка</h3>
-              <a class="button" href="delivery.html">Бесплатно</a>
-            </li>
+            <ul class="services-discounts-list">
+              <li class="services-discounts">
+                <h3>Скидки 50%</h3>
+                <a class="button" href="catalog.html">На 350 товаров</a>
+              </li>
+              <li class="services-delivery">
+                <h3>Доставка</h3>
+                <a class="button" href="delivery.html">Бесплатно</a>
+              </li>
             </ul>
           </div>
         </section>
@@ -411,7 +409,7 @@
       </div>
     </footer>
 
-    <section class="modal modal-authorization">
+    <!--     <section class="modal modal-authorization">
       <h2 class="visually-hidden">Форма авторизации</h2>
       <form action="#" method="post">
         <label for="username-field">Ваше имя:</label>
@@ -419,7 +417,7 @@
         <button class="button button-red" type="submit">Отправить</button>
       </form>
       <button class="button-close" type="button" aria-label="Закрыть">x</button>
-    </section>
+    </section> -->
 
     <section class="modal modal-map">
       <h2 class="visually-hidden">Карта</h2>
@@ -433,21 +431,35 @@
     <section class="modal modal-feedback">
       <h2 class="visually-hidden">Напишите нам!</h2>
       <form action="#" method="post">
-        <label for="field-name">Ваше имя:</label>
-        <input type="text" id="field-name" name="your_name" placeholder="Имя Фамилия" />
-        <label for="field-email">Ваш e-mail:</label>
-        <input type="text" id="field-email" name="your_email" placeholder="email@zxc.com" />
-        <label for="field-comment">Текст письма:</label>
-        <textarea name="field-comment" id="field-comment" rows="8">В свободной форме</textarea>
+        <div class="feedback-form">
+          <div class="feedback-field">
+            <label for="field-name">Ваше имя:</label>
+            <input type="text" id="field-name" name="your_name" placeholder="Имя Фамилия" />
+          </div>
+          <div class="feedback-field">
+            <label for="field-email">Ваш e-mail:</label>
+            <input type="text" id="field-email" name="your_email" placeholder="email@zxc.com" />
+          </div>
+          <div class="feedback-field-3">
+            <label for="field-comment">Текст письма:</label>
+            <textarea name="field-comment" id="field-comment" rows="8">В свободной форме</textarea>
+          </div>
+          <div class="feedback-bottom">
+            <button class="button button-red" type="submit">Отправить</button>
+          </div>
+        </div>
       </form>
-      <button class="button button-red" type="submit">Отправить</button>
       <button class="button-close" type="button" aria-label="Закрыть">x</button>
     </section>
 
     <section class="modal modal-add-cart">
-      <h2>Товар добавлен в корзину!</h2>
-      <a class="button button-red" href="#">Оформить заказ</a>
-      <a class="button" href="catalog.html">Продолжить покупки</a>
+      <div class="modal-add-cart-container">
+        <h2>Товар добавлен в корзину!</h2>
+        <div class="modal-add-cart-bottom">
+          <a class="button button-red" href="#">Оформить заказ</a>
+          <a class="button" href="catalog.html">Продолжить покупки</a>
+        </div>
+      </div>
       <button class="button-close" type="button" aria-label="Закрыть">x</button>
     </section>
 
