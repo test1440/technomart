@@ -951,13 +951,13 @@ input[type="radio"].visually-hidden {
 
 .map-container p {
   display: block;
-
+  margin-bottom: 31px;
   width: 210px;
 }
 
 .map img {
   height: 157px;
-  margin-bottom: 50px;
+  margin-bottom: 32px;
 }
 
 .map-container .button {
@@ -1408,16 +1408,25 @@ input[type="radio"].visually-hidden {
 .footer-middle,
 .footer-bottom,
 .footer-tools,
-.footer-social,
+.footer-links,
 .footer-feedback {
   display: flex;
 } /* это вапще законно? */
+
+.main-footer {
+  margin-bottom: 20px;
+}
+
+.main-footer,
+.main-footer a {
+  color: #e4e9ed;
+  background-color: #31415b;
+}
 
 .footer-bottom {
   min-height: 86px;
   padding-top: 11px;
   background-color: #293349;
-  
 }
 
 .footer-top ul {
@@ -1441,12 +1450,42 @@ input[type="radio"].visually-hidden {
   width: 526px;
 }
 
-.footer-social {
-  margin-left: 150px;
+.footer-links {
+  margin-top: 8px;
+  margin-left: 160px;
 }
 
-.footer-social li {
-  padding: 5px;
+.footer-links li {
+  padding: 2px;
+}
+
+.footer-links a {
+  display: block;
+
+  height: 42px;
+  width: 42px;
+
+  text-align: center;
+  background-color: #212939;
+  border-radius: 50%;
+}
+
+.footer-links .link-vk img {
+  height: 21px;
+  width: 26px;
+  margin-top: 12px;
+}
+
+.footer-links .link-fb img {
+  height: 21px;
+  width: 21px;
+  margin-top: 11px;
+}
+
+.footer-links .link-in img {
+  height: 21px;
+  width: 21px;
+  margin-top: 11px;
 }
 
 .footer-feedback {
@@ -1456,16 +1495,6 @@ input[type="radio"].visually-hidden {
 
 .footer-feedback p {
   margin-right: 48px;
-}
-
-.main-footer {
-  margin-bottom: 20px;
-}
-
-.main-footer,
-.main-footer a {
-  color: #e4e9ed;
-  background-color: #31415b;
 }
 
 a.footer-logo {
