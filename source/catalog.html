@@ -36,13 +36,13 @@
                 </div>
                 <div class="nav-subnav">
                     <ul class="user-navigation">
-                        <li>
+                        <li class="user-name">
                             <a href="#" class="account">
                                 Равшан Джамшутович
                             </a>
                         </li>
-                        <li>
-                            <a class="button-exit" href="#" aria-label="Кнопка выхода из аккаунта">
+                        <li class="button-exit">
+                            <a href="#" aria-label="Кнопка выхода из аккаунта">
                             </a>
                         </li>
                     </ul>
@@ -88,17 +88,13 @@
             <div class="title container">
                 <div class="title-top">
                     <ul class="breadcrumbs">
-                        <li>
-                            <a href="index.html" aria-label="Главная"></a>
+                        <li><a href="index.html" aria-label="Главная"></a>
                         </li>
-                        <li>
-                            <a href="catalog.html">Каталог</a>
+                        <li><a href="catalog.html">Каталог</a>
                         </li>
-                        <li>
-                            <a href="#">Инструмент</a>
+                        <li><a href="#">Инструмент</a>
                         </li>
-                        <li>
-                            Перфораторы
+                        <li>Перфораторы
                         </li>
                     </ul>
                 </div>
@@ -112,9 +108,18 @@
                     <form class="filter-parameters" action="#" method="GET">
                         <fieldset class="price-field">
                             <legend>Цена:</legend>
-                            <input class="price-min" type="text" name="price-min" value="0">
-                            <span>—</span>
-                            <input class="price-max" type="text" name="price-max" value="30000">
+                            <div class="price-line">
+                                <div class="switch-min"></div>
+                                <div class="toggle-switch">
+                                    <div class="switch-range"></div>
+                                </div>
+                                <div class="switch-max"></div>
+                            </div>
+                            <div class="price-input">
+                                <input class="price-min" type="text" name="price-min" value="0">
+                                <span>—</span>
+                                <input class="price-max" type="text" name="price-max" value="30000">
+                            </div>
                         </fieldset>
                         <fieldset class="manufacturer-field">
                             <legend>Производители:</legend>
@@ -173,11 +178,16 @@
                         </ul>
                         <ul class="sorting-filter">
                             <li>
-                                <a class="up" href="#" aria-label="По возрастанию">+
+                                <a class="up" href="#" aria-label="По возрастанию">                  <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewbox="0 0 11 10">
+                                    <path fill="#231F20" d="M5.5 0L0 10h11z" />
+                                  </svg>
                                 </a>
                             </li>
                             <li>
-                                <a class="down" href="#" aria-label="По убыванию">-
+                                <a class="down" href="#" aria-label="По убыванию">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewbox="0 0 11 10">
+                                        <path fill="#231F20" d="M5.5 10L0 0h11" />
+                                      </svg>
                                 </a>
                             </li>
                         </ul>
