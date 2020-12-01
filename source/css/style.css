@@ -1260,6 +1260,7 @@ input[type="radio"].visually-hidden {
 
 .catalog-page {
   display: flex;
+  margin-bottom: 69px;
 }
 
 .page-catalog .main-header {
@@ -1309,25 +1310,28 @@ input[type="radio"].visually-hidden {
   color: #ed3543;
 }
 
+.all-catalog .catalog {
+  margin-bottom: 53px;
+}
+
 .catalog-list {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
 }
 
-/* .catalog-list li {
-  margin-bottom: 9px;
-} */
+.catalog-list li {
+  margin-bottom: 3px;
+}
 
 .catalog-list article {
-  margin: 15px 0;
+  margin-top: 15px;
   padding: 0;
   padding-bottom: 20px;
   width: 220px;
 
   border: 1px solid #eaeaea;
 }
-
 .title {
   padding: 0;
   margin-bottom: 18px;
@@ -1603,9 +1607,6 @@ input[type="checkbox"]:checked ~ label::before {
   padding-left: 2px;
 }
 
-.power-list {
-}
-
 .power-field li {
   position: relative;
   margin-left: 18px;
@@ -1656,20 +1657,23 @@ input[type="radio"]:checked ~ label::before {
 }
 
 .pages-list li {
-  margin-right: 10px;
+  margin-right: 8px;
 }
 
 .pages-list a {
-  padding: 10px;
-}
+  padding: 10px 16px 10px 16px;
 
-.pages-list a {
   line-height: 18px;
   font-family: "PT Sans", Arial, sans-serif;
   text-align: center;
   color: inherit;
   text-transform: uppercase;
   border: 1px solid #e5e5e5;
+  border-radius: 4px;
+}
+
+.pages-list .page-next {
+  padding: 10px 30px 10px 30px;
 }
 
 .pages-list a:hover,
@@ -1683,6 +1687,15 @@ input[type="radio"]:checked ~ label::before {
   color: #ffffff;
   background-color: #ee3643;
   border-width: 0;
+}
+
+.page-catalog .about-perforator {
+  margin: 0;
+  margin-bottom: 72px;
+}
+
+.page-catalog .about-perforator p {
+  margin: 0;
 }
 
 /* end filter, catalog */
