@@ -19,8 +19,12 @@
             <img src="img/logo-technomart.svg" width="109" height="19" alt="Логотип «Техномарт»">
           </a>
           <form class="search-form" action="#" method="get">
-            <label class="visually-hidden" for="form-search">Поиск по сайту:</label>
-            <input class="form-search" type="text" name="search" id="form-search" placeholder="Поиск:">
+            <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17">
+              <path fill="#ffffff"
+                d="M17 15.586l-3.542-3.542A7.465 7.465 0 0 0 15 7.5 7.5 7.5 0 1 0 7.5 15c1.71 0 3.282-.579 4.544-1.542L15.586 17 17 15.586zM2 7.5C2 4.467 4.467 2 7.5 2 10.532 2 13 4.467 13 7.5c0 3.032-2.468 5.5-5.5 5.5A5.506 5.506 0 0 1 2 7.5z" />
+            </svg>
+            <label class="visually-hidden" for="search">Поиск по сайту:</label>
+            <input class="search" type="text" name="search" id="search" placeholder="Поиск:">
             <button type="submit" aria-label="Кнопка поиска"></button>
           </form>
           <a class="bookmarks" href="bookmarks.html">Закладки: 0</a>
@@ -77,6 +81,7 @@
           <li class="tools-materials">
             <h3>Материалы</h3>
             <a class="button" href="materials.html">На любой вкус</a>
+            <div class="flag-new">new</div>
           </li>
           <li class="tools-utils">
             <h3>Инструмент</h3>
@@ -102,22 +107,36 @@
               <a class="button button-red" href="catalog.html">Открыть каталог</a>
             </li>
           </ul>
-          <!-- кругляшки -->
-          <ul class="slider-switches-points">
-            <li>
-              <button class="switch-button-1" type="button" aria-label="Первый слайд">Слайд-1</button>
-            </li>
-            <li>
-              <button class="switch-button-2 active" type="button" aria-label="Второй слайд">Слайд-2</button>
-            </li>
-          </ul>
           <!-- стрелки -->
           <ul class="slider-switches-arrows">
             <li>
-              <button class="switch-arrow-1" type="button" aria-label="Листать слайды влево">Слайд-1</button>
+              <button class="switch-arrow-1" type="button" aria-label="Листать слайды влево">
+                <!-- Слайд-1 -->
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="40" viewBox="0 0 22 40">
+                  <path fill="#FFF" d="M19.83-.035l2.089 2.099L4.13 19.947l17.847 17.939-2.09 2.099L-.048 19.947z" />
+                </svg>
+              </button>
             </li>
             <li>
-              <button class="switch-arrow-2" type="button" aria-label="Листать слайды вправо">Слайд-2</button>
+              <button class="switch-arrow-2" type="button" aria-label="Листать слайды вправо">
+                <!-- Слайд-2 -->
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="40" viewBox="0 0 22 40">
+                  <path fill="#FFF" d="M2.098-.035L.009 2.064l17.789 17.883L-.048 37.886l2.089 2.099 19.935-20.038z" />
+                </svg>
+              </button>
+            </li>
+          </ul>
+          <!-- кругляшки -->
+          <ul class="slider-switches-points">
+            <li>
+              <button class="switch-button-1" type="button" aria-label="Первый слайд">
+                <!-- Слайд-1 -->
+              </button>
+            </li>
+            <li>
+              <button class="switch-button-2 active" type="button" aria-label="Второй слайд">
+                <!-- Слайд-2 -->
+              </button>
             </li>
           </ul>
         </section>
@@ -147,7 +166,7 @@
               <img src="img/products/bfg9000.png" width="220" height="170" alt="Перфоратор BOSCH BFG 9000">
               <h3>Перфоратор BOSCH BFG 9000</h3>
               <p><del>32500 Р.</del></p>
-              <a class="new-price" href="25500.html">25500 Р.</a>
+              <p class="new-price">25500 Р.</p>
               <ul class="buy-menu">
                 <li>
                   <button class="button button-buy" type="button">Купить</button>
@@ -163,7 +182,7 @@
               <img src="img/products/bfg3000.png" width="220" height="170" alt="Перфоратор BOSCH BFG 3000">
               <h3>Перфоратор BOSCH BFG 3000</h3>
               <p><del>22500 Р.</del></p>
-              <a class="new-price" href="15500.html">15500 Р.</a>
+              <p class="new-price">15500 Р.</p>
               <ul class="buy-menu">
                 <li>
                   <button class="button button-buy" type="button">Купить</button>
@@ -179,7 +198,7 @@
               <img src="img/products/bfg6000.png" width="220" height="170" alt="Перфоратор BOSCH BFG 6000">
               <h3>Перфоратор BOSCH BFG 6000</h3>
               <p><del>30500 Р.</del></p>
-              <a class="new-price" href="25500.html">25500 Р.</a>
+              <p class="new-price">25500 Р.</p>
               <ul class="buy-menu">
                 <li>
                   <button class="button button-buy" type="button">Купить</button>
@@ -195,7 +214,7 @@
               <img src="img/products/bfg2000.png" width="220" height="170" alt="Перфоратор BOSCH BFG 2000">
               <h3>Перфоратор BOSCH BFG 2000</h3>
               <p><del></del></p>
-              <a class="new-price" href="12500.html">12500 Р.</a>
+              <p class="new-price">12500 Р.</p>
               <ul class="buy-menu">
                 <li>
                   <button class="button button-buy" type="button">Купить</button>
@@ -204,6 +223,7 @@
                   <button class="button button-bookmarks" type="button">В закладки</button>
                 </li>
               </ul>
+              <div class="flag-new">new</div>
             </article>
           </li>
         </ul>
@@ -311,8 +331,8 @@
         <div class="about-us-text">
           <h2>Компания «Техномарт»</h2>
           <p>
-            Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит
-            равнодушными любителей сэкономить на гастарбайтерах.
+            Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и<br> строительства не
+            оставит равнодушными любителей сэкономить на гастарбайтерах.
           </p>
           <p>
             Мы можем доставить ваш товар в самые удаленные точки России! <br>Техномарт работает со многими транспортными
@@ -466,10 +486,6 @@
       </div>
       <button class="button-close" type="button" aria-label="Закрыть">x</button>
     </section>
-
-    <div class="flag-new">
-      <!-- ленточка-флаг -->
-    </div>
 
   </body>
 
