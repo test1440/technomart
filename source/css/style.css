@@ -1831,7 +1831,6 @@ input[type="radio"]:checked ~ label::before {
 
 /* footer */
 
-/* времм */
 .footer-top,
 .footer-navigation,
 .footer-middle,
@@ -1840,7 +1839,7 @@ input[type="radio"]:checked ~ label::before {
 .footer-links,
 .footer-feedback {
   display: flex;
-} /* это вапще законно? */
+}
 
 .main-footer {
   margin-bottom: 20px;
@@ -1917,6 +1916,10 @@ input[type="radio"]:checked ~ label::before {
   margin-top: 11px;
 }
 
+.footer-links a:hover {
+  background-color: #ed3543;
+}
+
 .footer-feedback {
   width: 302px;
   margin-left: auto;
@@ -1953,6 +1956,14 @@ a.link {
   text-decoration: underline;
 }
 
+.link:focus,
+.footer-phone:focus,
+.link:focus,
+.footer-phone:focus {
+  text-decoration: none;
+  color: #ed3543;
+}
+
 .footer-copyright,
 .footer-feedback {
   font-size: 16px;
@@ -1960,12 +1971,18 @@ a.link {
 }
 
 .footer-navigation a:hover,
-.footer-tools a:hover,
+.footer-tools a:hover {
+  text-decoration: underline;
+}
+
 .footer-navigation a:focus,
-.footer-navigation a:active,
+.footer-navigation a:active {
+  color: #919ba9;
+}
+
 .footer-tools a:focus,
 .footer-tools a:active {
-  text-decoration: underline;
+  color: #98896e;
 }
 
 /* end footer */
