@@ -450,7 +450,8 @@
                         </li>
                         <li>
                             <a class="link-fb" href="#" aria-label="Фейсбук"><img src="img/icon-fb.svg" width="24"
-                                    height="24" alt="Facebook"><span class="visually-hidden">Facebook</span></a></li>
+                                    height="24" alt="Facebook"><span class="visually-hidden">Facebook</span></a>
+                        </li>
                         <li>
                             <a class="link-in" href="#" aria-label="Инстаграмм"><img src="img/icon-insta.svg" width="24"
                                     height="24" alt="Instagram"><span class="visually-hidden">Instagram</span></a>
@@ -470,24 +471,33 @@
             </div>
         </footer>
 
-        <section class="modal modal-authorization">
-            <h2 class="visually-hidden">Форма авторизации</h2>
-            <form action="#" method="post">
-                <label for="username-field">Ваше имя:</label>
-                <input type="text" id="username-field" name="username" placeholder="Имя Фамилия" />
-                <button class="button button-red" type="submit">Отправить</button>
-            </form>
-            <button class="button-close" type="button" aria-label="Закрыть">x</button>
-        </section>
-
         <section class="modal modal-add-cart">
-            <h2>Товар добавлен в корзину!</h2>
-            <a class="button button-red" href="#">Оформить заказ</a>
-            <a class="button" href="catalog.html">Продолжить покупки</a>
+            <div class="modal-add-cart-container">
+                <h2>Товар добавлен в корзину!</h2>
+                <div class="modal-add-cart-bottom">
+                    <a class="button button-red" href="#">Оформить заказ</a>
+                    <a class="button button-white" href="catalog.html">Продолжить покупки</a>
+                </div>
+            </div>
             <button class="button-close" type="button" aria-label="Закрыть">x</button>
         </section>
 
+        <script>
+            var cart = document.querySelector(".cart");
+            var modal_add_cart = document.querySelector(".modal-add-cart");
+            var button_close_cart = document.querySelector(".modal-add-cart > .button-close");
 
+            /* cart */
+            cart.addEventListener("click", function (evt) {
+                evt.preventDefault();
+                modal_add_cart.classList.add("modal-show")
+            });
+
+            button_close_cart.addEventListener("click", function (evt) {
+                evt.preventDefault();
+                modal_add_cart.classList.remove("modal-show")
+            });
+        </script>
 
     </body>
 
