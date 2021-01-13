@@ -490,6 +490,10 @@
 
     <script>
 
+      var enter = document.querySelector(".enter");
+      var modal_authorization = document.querySelector(".modal-authorization");
+      var button_close_authorization = document.querySelector(".modal-authorization > .button-close");
+
       var map = document.querySelector(".map");
       var modal_map = document.querySelector(".modal-map");
       var button_close_map = document.querySelector(".modal-map > .button-close");
@@ -502,6 +506,16 @@
       var modal_feedback = document.querySelector(".modal-feedback");
       var button_close_feedback = document.querySelector(".modal-feedback > .button-close");
 
+      /* authorization */
+      enter.addEventListener("click", function (evt) {
+        evt.preventDefault();
+        modal_authorization.classList.add("modal-show")
+      });
+
+      button_close_authorization.addEventListener("click", function (evt) {
+        evt.preventDefault();
+        modal_authorization.classList.remove("modal-show")
+      });
 
       /* map */
       map.addEventListener("click", function (evt) {

@@ -2097,11 +2097,54 @@ a.link {
   background-color: #ffffff;
 }
 
-/* authorization, */
+/* authorization */
 
 .modal-authorization {
   display: none;
+  position: fixed;
+
+  width: 620px;
+  height: 83px;
+
+  bottom: 130px;
+  left: 50%;
+  margin-left: -320px;
+  box-shadow: 0 0 20px 10px #afb3bb;
 }
+
+.modal-authorization .button-close {
+  position: absolute;
+
+  top: 11px;
+  right: 8px;
+
+  font-size: 0;
+  border: none;
+}
+
+.modal-authorization .button-close::before,
+.modal-authorization .button-close::after {
+  content: "";
+  position: absolute;
+
+  width: 25px;
+  height: 3px;
+  top: 5px;
+  right: -4px;
+
+  background-color: #ee3643;
+
+  cursor: pointer;
+}
+
+.modal-authorization .button-close::before {
+  transform: rotate(45deg);
+}
+
+.modal-authorization .button-close::after {
+  transform: rotate(-45deg);
+}
+
 /* cart */
 
 .modal-add-cart {
@@ -2266,7 +2309,7 @@ a.link {
   left: 50%;
   margin-left: -320px;
 
-padding-top: 46px;
+  padding-top: 46px;
 
   width: 620px;
 
@@ -2303,7 +2346,6 @@ padding-top: 46px;
 }
 
 .feedback-bottom {
-  
   width: 620px;
   height: 111px;
 
