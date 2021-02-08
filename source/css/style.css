@@ -2103,13 +2103,68 @@ a.link {
   display: none;
   position: fixed;
 
-  width: 620px;
-  height: 83px;
-
-  bottom: 130px;
+  top: 150px;
   left: 50%;
-  margin-left: -320px;
+  margin-left: -200px;
+
+  width: 400px;
+  min-height: 95px;
+
   box-shadow: 0 0 20px 10px #afb3bb;
+}
+
+.authorization-form {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.authorization-field {
+  display: flex;
+  flex-direction: column;
+
+  margin: 10px 30px 20px 20px;
+
+  width: 100%;
+}
+
+.modal-authorization label {
+  font-size: 18px;
+  line-height: 18px;
+
+  margin-bottom: 5px;
+}
+
+.modal-authorization input {
+  font-family: "PT Sans", Arial, sans-serif;
+
+  color: #b7b7b7;
+  border: solid 2px #b7b7b7;
+}
+
+.modal-authorization input {
+  font-size: 13px;
+  line-height: 18px;
+}
+
+.authorization-button {
+  display: flex;
+  width: 100%;
+  height: 70px;
+
+  background-color: #f1f1f1;
+}
+
+.modal-authorization input[type="text"]:hover,
+.modal-authorization input[type="text"]:focus,
+.modal-authorization input[type="text"]:active {
+  border-color: #f7080d;
+  outline: none;
+}
+
+.modal-authorization .button-red {
+  margin: 17px 80px;
+  width: 80%;
+  height: 38px;
 }
 
 .modal-authorization .button-close {
@@ -2150,7 +2205,7 @@ a.link {
 .modal-add-cart {
   display: none;
   position: fixed;
-  bottom: 130px;
+  top: 130px;
   left: 50%;
   margin-left: -320px;
   box-shadow: 0 0 20px 10px #afb3bb;
@@ -2255,7 +2310,7 @@ a.link {
 .modal-map {
   display: none;
   position: fixed;
-  bottom: 130px;
+  top: 100px;
   left: 50%;
   margin-left: -470px;
   height: 446px;
@@ -2263,6 +2318,7 @@ a.link {
 }
 
 .modal-map p {
+  display: none;
   margin: 0;
 }
 
@@ -2305,7 +2361,7 @@ a.link {
   display: none;
   position: fixed;
 
-  bottom: 130px;
+  top: 100px;
   left: 50%;
   margin-left: -320px;
 
@@ -2420,7 +2476,6 @@ a.link {
   transform: rotate(-45deg);
 }
 
-/*  */
 .button-close:focus {
   outline: none;
 }
@@ -2434,6 +2489,13 @@ a.link {
 
 .modal-show {
   display: block;
+  animation-name: jump;
+  animation-duration: 0.6s;
+}
+
+.modal-error {
+  animation-name: shake;
+  animation-duration: 0.6s;
 }
 
 /* end modal */
@@ -2455,72 +2517,24 @@ a.link {
 
 /* end flag-new */
 
-/* 
-@-webkit-keyframes bounce {
+@keyframes jump {
   0% {
-    -webkit-transform: translateY(-2000px);
     transform: translateY(-2000px);
   }
   70% {
-    -webkit-transform: translateY(30px);
     transform: translateY(30px);
   }
   90% {
-    -webkit-transform: translateY(-10px);
     transform: translateY(-10px);
   }
   100% {
-    -webkit-transform: translateY(0);
     transform: translateY(0);
-  }
-}
-
-@keyframes bounce {
-  0% {
-    -webkit-transform: translateY(-2000px);
-    transform: translateY(-2000px);
-  }
-  70% {
-    -webkit-transform: translateY(30px);
-    transform: translateY(30px);
-  }
-  90% {
-    -webkit-transform: translateY(-10px);
-    transform: translateY(-10px);
-  }
-  100% {
-    -webkit-transform: translateY(0);
-    transform: translateY(0);
-  }
-}
-
-@-webkit-keyframes shake {
-  0%,
-  100% {
-    -webkit-transform: translateX(0);
-    transform: translateX(0);
-  }
-  10%,
-  30%,
-  50%,
-  70%,
-  90% {
-    -webkit-transform: translateX(-10px);
-    transform: translateX(-10px);
-  }
-  20%,
-  40%,
-  60%,
-  80% {
-    -webkit-transform: translateX(10px);
-    transform: translateX(10px);
   }
 }
 
 @keyframes shake {
   0%,
   100% {
-    -webkit-transform: translateX(0);
     transform: translateX(0);
   }
   10%,
@@ -2528,15 +2542,12 @@ a.link {
   50%,
   70%,
   90% {
-    -webkit-transform: translateX(-10px);
     transform: translateX(-10px);
   }
   20%,
   40%,
   60%,
   80% {
-    -webkit-transform: translateX(10px);
     transform: translateX(10px);
   }
 }
- */

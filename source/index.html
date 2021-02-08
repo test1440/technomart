@@ -422,11 +422,11 @@
           <div class="footer-feedback">
             <p>
               <b>Обратная связь:</b><br>
-              <a class="link" href="№">mail@hmltakkademy.ru</a>
+              <a class="link" href="№">mail@hhhttkademy.ry</a>
             </p>
             <p>
               <b>Разработано - </b><br>
-              <a class="link" href="#">hmltakkademy.ry</a>
+              <a class="link" href="#">hhhtkkademy.ry</a>
             </p>
           </div>
         </div>
@@ -437,15 +437,25 @@
     <section class="modal modal-authorization">
       <h2 class="visually-hidden">Форма авторизации</h2>
       <form action="#" method="post">
-        <label for="username-field">Ваше имя:</label>
-        <input type="text" id="username-field" name="username" placeholder="Имя Фамилия" />
-        <button class="button button-red" type="submit">Отправить</button>
+        <div class="authorization-form">
+          <div class="authorization-field">
+            <label for="username-field">Ваше имя:</label>
+            <input type="text" id="username-field" name="username" placeholder="Имя Фамилия" required>
+          </div>
+          <div class="authorization-button">
+            <button class="button button-red" type="submit">Отправить</button>
+          </div>
+        </div>
       </form>
       <button class="button-close" type="button" aria-label="Закрыть">x</button>
     </section>
 
     <section class="modal modal-map">
       <h2 class="visually-hidden">Карта</h2>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533252!2d30.320858715925898!3d59.938716481876185!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1612798139698!5m2!1sru!2sru"
+        width="940" height="446" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0">
+      </iframe>
       <p>
         <img src="img/map.jpg" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург" width="940"
           height="446" />
@@ -459,15 +469,15 @@
         <div class="feedback-form">
           <div class="feedback-field">
             <label for="field-name">Ваше имя:</label>
-            <input type="text" id="field-name" name="your_name" placeholder="Имя Фамилия" />
+            <input type="text" id="field-name" name="your_name" placeholder="Имя Фамилия" required>
           </div>
           <div class="feedback-field">
             <label for="field-email">Ваш e-mail:</label>
-            <input type="text" id="field-email" name="your_email" placeholder="email@zxc.com" />
+            <input type="text" id="field-email" name="your_email" placeholder="email@zxc.com" required>
           </div>
           <div class="feedback-field-3">
             <label for="field-comment">Текст письма:</label>
-            <textarea name="field-comment" id="field-comment" rows="8">В свободной форме</textarea>
+            <textarea name="field-comment" id="field-comment" rows="8" placeholder="В свободной форме"></textarea>
           </div>
           <div class="feedback-bottom">
             <button class="button button-red" type="submit">Отправить</button>
@@ -488,69 +498,7 @@
       <button class="button-close" type="button" aria-label="Закрыть">x</button>
     </section>
 
-    <script>
-
-      var enter = document.querySelector(".enter");
-      var modal_authorization = document.querySelector(".modal-authorization");
-      var button_close_authorization = document.querySelector(".modal-authorization > .button-close");
-
-      var map = document.querySelector(".map");
-      var modal_map = document.querySelector(".modal-map");
-      var button_close_map = document.querySelector(".modal-map > .button-close");
-
-      var cart = document.querySelector(".cart");
-      var modal_add_cart = document.querySelector(".modal-add-cart");
-      var button_close_cart = document.querySelector(".modal-add-cart > .button-close");
-
-      var feedback = document.querySelector(".button-feedback");
-      var modal_feedback = document.querySelector(".modal-feedback");
-      var button_close_feedback = document.querySelector(".modal-feedback > .button-close");
-
-      /* authorization */
-      enter.addEventListener("click", function (evt) {
-        evt.preventDefault();
-        modal_authorization.classList.add("modal-show")
-      });
-
-      button_close_authorization.addEventListener("click", function (evt) {
-        evt.preventDefault();
-        modal_authorization.classList.remove("modal-show")
-      });
-
-      /* map */
-      map.addEventListener("click", function (evt) {
-        evt.preventDefault();
-        modal_map.classList.add("modal-show")
-      });
-
-      button_close_map.addEventListener("click", function (evt) {
-        evt.preventDefault();
-        modal_map.classList.remove("modal-show")
-      });
-
-      /* cart */
-      cart.addEventListener("click", function (evt) {
-        evt.preventDefault();
-        modal_add_cart.classList.add("modal-show")
-      });
-
-      button_close_cart.addEventListener("click", function (evt) {
-        evt.preventDefault();
-        modal_add_cart.classList.remove("modal-show")
-      });
-
-      /* feedback */
-      feedback.addEventListener("click", function (evt) {
-        evt.preventDefault();
-        modal_feedback.classList.add("modal-show")
-      });
-
-      button_close_feedback.addEventListener("click", function (evt) {
-        evt.preventDefault();
-        modal_feedback.classList.remove("modal-show")
-      });
-
-    </script>
+    <script src="js/popups.js"></script>
 
   </body>
 
